@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/addeventatc.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js" defer></script>
     <script type="text/javascript" src="./js/js.js" defer></script>
-    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async></script>
 
 </head>
 
@@ -134,19 +134,50 @@
         </div>
         <div class="selectInvest">
             <h2>ВЫБЕРИТЕ СУММУ ВАШЕЙ ИНВЕСТИЦИИ</h2>
-            
+
             <div class="rangeBar">
-               <div id="back">
-                   <span></span>
-               </div>
-               <div id="close"></div>
-               <div id="trumd"></div>
-            
+             
+                    <input type="range" id="back" value="0" min="0" max="10000" step="1">
+                    <div id="maxPrice">
+                       <span>0</span>
+                        <span>1000</span>
+                        <span>2000</span>
+                        <span>3000</span>
+                        <span>4000</span>
+                        <span>5000</span>
+                        <span>6000</span>
+                        <span>7000</span>
+                        <span>8000</span>
+                        <span>9000</span>
+                        <span>1000</span>
+                    </div>
+             
             </div>
             <div class="summ">
-                <p id="amount"></p>
+                <div class="summBlock" >
+                    <h3>Ваша инвестиция:</h3>
+                    <p id="amount">$0</p>
+                </div>   
+                 <div class="summBlock">
+                    <h3>Затраты на закупку <br> и доставку товара:</h3>
+                     <p id="prod">$0</p>   
+                </div>   
+                <div class="summBlock">
+                     <h3>Затраты на рекламу:</h3>
+                     <p id="adv">$0</p>
+                </div>       
+               <div class="summBlock">
+                  <h3>Доход с продаж:</h3>
+                   <p id="profit">$0</p>
+               </div>
+                
             </div>
-            
+            <div class="totalsumm">
+               <h3>Чистая прибыль:</h3>
+                <p id="total">$0</p>
+                <h4>Ваша чистая прибыль после продажи всей партии товара</h4>
+            </div>
+
         </div>
         <div class="spanTrack">
             <img src="./img/step-2.png" alt="">

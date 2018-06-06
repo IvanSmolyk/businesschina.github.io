@@ -18,25 +18,7 @@ li,
 ul {
     list-style-position: inside;
 }
-input[type=range] {
-  -webkit-appearance: none;
-  background: transparent;
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-input[type=range]:focus {
-  outline: none; 
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
 
-  /* Hides the slider so custom styles can be added */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
-}
 select {
     outline: none;
 }
@@ -206,30 +188,109 @@ strong {
     max-width: 500px;
     cursor: pointer;
 }
-.selectInvest{
-    
+
+.selectInvest {
+    padding: 40px;
 }
-.selectInvest h2{
-    
-}
-.rangeBar{
-    width: 100%;    
-}
-#back{
+
+.selectInvest h2 {}
+
+.rangeBar {}
+
+#back {
+    -webkit-appearance: none;
     width: 100%;
     height: 10px;
-    background: #efefef;    
+    background: #efefef;
+    outline: none;
+    margin-top: 20px;
 }
-#close{
+
+#back::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #6598ff;
+    cursor: pointer;
+}
+
+#back::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #6598ff;
+    cursor: pointer;
+}
+
+#maxPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+#maxPrice span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+#maxPrice span:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 10px;
+    top: -14px;
     
+    background-color: #6598ff;
 }
-
-
-
-
-
-
-
+.summ{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.summBlock{
+    border-top: 2px solid #6598ff;
+}
+.summBlock h3{
+    font-size: 16px;
+    margin: 10px 0;
+  color:  rgba(36,36,36,.7);    
+}
+#amount, #profit{
+    font-weight: 700;
+    color: #6598ff;
+    font-size: 30px;
+}
+#prod, #adv{
+    color:  rgba(36,36,36,.7);    
+    font-size: 30px;
+       
+}
+.totalsumm{
+    background: #efefef;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    display: grid;
+}
+.totalsumm h3, .totalsumm h4{
+    font-size: 10pt;
+    font-weight: normal;
+    text-align: center;
+    color:  rgba(36,36,36,.7);    
+}
+#total{
+    font-size: 40px;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #FC7321;
+    text-align: center;
+}
 .calendar {
     padding: 80px;
 }
@@ -375,5 +436,5 @@ strong {
     width: 100%;
     height: 4px;
     background: #fff200;
-    
+
 }
