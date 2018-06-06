@@ -4,11 +4,6 @@
     font-family: montserrat;
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 html,
 body {
     background: #F4F8FF;
@@ -23,9 +18,29 @@ li,
 ul {
     list-style-position: inside;
 }
-select{
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none; 
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+select {
     outline: none;
 }
+
 button {
     border: none;
     outline: none;
@@ -127,19 +142,21 @@ strong {
     height: 40px;
     background: #F4F8FF;
 }
+
 .spanTrack img {
     position: relative;
     left: -20px;
 }
 
-.block2{
+.block2 {
     padding: 40px 0;
 }
 
-.block2 h3{
+.block2 h3 {
     text-align: center;
 }
-.blockProduct{
+
+.blockProduct {
     padding: 20px;
     display: grid;
     grid-gap: 20px;
@@ -147,7 +164,8 @@ strong {
     justify-items: center;
     justify-content: center;
 }
-.curProd{
+
+.curProd {
     display: grid;
     align-content: space-evenly;
     justify-content: center;
@@ -156,22 +174,25 @@ strong {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid lightgrey;
-    grid-gap: 20px;
+    grid-gap: 10px;
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
 }
-.curProd img{
-    max-width: 150px;
+
+.curProd img {
+    max-width: 120px;
 }
-.curProd input{
+
+.curProd input {
     display: none;
 }
-.selectCountry{
+
+.selectCountry {
     padding: 40px;
 }
 
-.selectCountry select{
+.selectCountry select {
     font-size: 14px;
     margin: 20px 0;
     padding: 10px 40px 10px 12px;
@@ -185,18 +206,145 @@ strong {
     max-width: 500px;
     cursor: pointer;
 }
-.calendar{
-	padding: 40px;	
+.selectInvest{
+    
 }
-.curDate{
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(2, 1fr);
+.selectInvest h2{
+    
 }
-.curDate h2{
-	font-size: 24px;
-    font-weight: 700;
+.rangeBar{
+    width: 100%;    
+}
+#back{
+    width: 100%;
+    height: 10px;
+    background: #efefef;    
+}
+#close{
+    
+}
+
+
+
+
+
+
+
+.calendar {
+    padding: 80px;
+}
+
+.curDate {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.curDate h2 {
+    font-family: montserratbold;
+    font-size: 24px;
+    line-height: 1.6;
     text-align: left;
+    align-self: center;
+}
+
+.curDate img {
+    justify-self: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .08);
+}
+
+.curDate a {
+    font-family: montserratbold;
+    padding: 0 15px;
+    background: #4960d2;
+    height: 55px;
+    border-radius: 4px;
+    width: 440px;
+    color: #fff;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.blank {
+    padding: 80px;
+    margin-bottom: 150px;
+}
+
+.curBlank {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.curBlank h2 {
+    font-family: montserratbold;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: left;
+    align-self: center;
+}
+
+.curBlank p {
+    margin-top: 20px;
+    font-family: montserratbold;
+    font-size: 16px;
+}
+
+.curBlank img {
+    justify-self: center;
+}
+
+.curBlank a {
+    font-family: montserratbold;
+    padding: 0 15px;
+    background: #FF9930;
+    height: 55px;
+    border-radius: 4px;
+    width: 440px;
+    color: #fff;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.flat {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(177, 181, 199, 0) 0%, rgba(177, 181, 199, 1) 100%);
+}
+
+.container1 {
+    width: 1000px;
+    margin: auto;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    height: 150px;
+    align-items: center;
+}
+
+.contacts p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hren p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: right;
 }
 
 
@@ -219,3 +367,13 @@ strong {
 
 
 
+
+
+
+
+.downFooter {
+    width: 100%;
+    height: 4px;
+    background: #fff200;
+    
+}

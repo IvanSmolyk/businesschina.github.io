@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smolyk</title>
     <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/addeventatc.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" defer href="./js/js.js">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/js.js" defer></script>
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
 </head>
 
 <body>
+
     <div class="upheader"></div>
+
     <div class="container">
         <div class="block1">
             <h1>Смотри видео и узнай,</h1>
@@ -86,67 +92,115 @@
                 <img src="./img/5.jpg" alt="">
                 <input type="checkbox" id="prod6">
                 
-                JBL колонки ($10)
+                USB шейкер ($10,2)
             </label>
             <label class="curProd" for="prod7">
                
                 <img src="./img/6.jpg" alt="">
                 <input type="checkbox" id="prod7">
                 
-                JBL колонки ($10)
+                Беспроводная bluetooth колонка CoolDog ($12)
             </label>
             <label class="curProd" for="prod8">
                
                 <img src="./img/7.jpg" alt="">
                 <input type="checkbox" id="prod8">
                 
-                JBL колонки ($10)
+                Увлажнитель воздуха Mini Humidifier ($4,8)
             </label>
             <label class="curProd" for="prod9">
                
                 <img src="./img/8.jpg" alt="">
                 <input type="checkbox" id="prod9">
                 
-                JBL колонки ($10)
+                Фитнесс резинки ($2,69)
             </label>
             <label class="curProd" for="prod10">
                
                 <img src="./img/9.jpg" alt="">
                 <input type="checkbox" id="prod10">
-                
-                JBL колонки ($10)
+                Коврик для мытья кистей (Makeup brush cleaners) ($0,72)JBL колонки ($10)
             </label>
-            
+
         </div>
-        
-    <div class="selectCountry">
-        <h2>ВЫБЕРИТЕ СТРАНУ ДЛЯ ПРОДАЖИ (ДОСТАВКА)</h2>
-        <select name="" id="">
+
+        <div class="selectCountry">
+            <h2>ВЫБЕРИТЕ СТРАНУ ДЛЯ ПРОДАЖИ (ДОСТАВКА)</h2>
+            <select name="" id="">
             <option value="">Россия</option>
             <option value="">Украина</option>
             <option value="">Казахстан</option>
         </select>
-    </div>
-    <div class="selectInvest">
-        <h2>ВЫБЕРИТЕ СУММУ ВАШЕЙ ИНВЕСТИЦИИ</h2>
-        
-    </div>
-    <div class="spanTrack">
+        </div>
+        <div class="selectInvest">
+            <h2>ВЫБЕРИТЕ СУММУ ВАШЕЙ ИНВЕСТИЦИИ</h2>
+            
+            <div class="rangeBar">
+               <div id="back">
+                   <span></span>
+               </div>
+               <div id="close"></div>
+               <div id="trumd"></div>
+            
+            </div>
+            <div class="summ">
+                <p id="amount"></p>
+            </div>
+            
+        </div>
+        <div class="spanTrack">
             <img src="./img/step-2.png" alt="">
+        </div>
+
+        <div class="calendar">
+
+            <div class="curDate">
+                <img src="./img/bon1.png" alt="">
+                <h2>Кликните по синей кнопке,<br> чтобы добавить напоминание<br> в свой календарь о начале<br> мастер-класса:</h2>
+                <a href="#" class="addeventatc">Добавить напоминание</a>
+
+            </div>
+
+        </div>
+        <div class="spanTrack">
+            <img src="./img/step-3.png" alt="">
+        </div>
+
+        <div class="blank">
+
+            <div class="curBlank">
+
+                <h2>Скачайте и распечатайте<br>этот бланк для записей<br>во время мастер-класса.
+                    <p>Он поможет упорядочить полученные<br>знания.</p>
+                </h2>
+
+                <img src="./img/bon2.png" alt="">
+                <a href="#">Скачать бланк</a>
+            </div>
+
+        </div>
     </div>
-	
-	<div class="calendar">
-		<div class="curDate">
-			<img src="./img/bon1.png" alt="">
-			<h2>Кликните по синей кнопке,<br> чтобы добавить напоминание<br> в свой календарь о начале<br> мастер-класса:</h2>
-		</div>
-		
-		
-	</div>
+    <div class="flat">
+        <div class="container1">
+            <div class="footer">
+                <img src="./img/logo-footer.jpg" alt="">
+                <div class="contacts">
+                    <p>+7 (499) 677 62 29 (Россия)</p>
+                    <p>+38 (044) 353 13 15 (Украина)</p>
+                    <p>+7 (701) 914 61 11 (Казахстан)</p>
+                </div>
+                <div class="hren">
+                    <p>© 2018 Кирилл Кафтаник. ФОП Кирилл Кафтаник ИНН 3277409373</p>
+                    <p>Юридический адрес: г. Запорожье, ул. Бульвар Центральный, 17, кв. 32, Все права защищены.</p>
+                    <p>По всем вопросам: <a href="mailto:office@sonmax.club">office@sonmax.club</a></p>
+                    <p><a href="">Пользовательское соглашение</a> | <a href="">Соглашение на обработку персональных данных</a> | <a href="">Отказ от ответственности</a></p>
+                </div>
 
+            </div>
+        </div>
+    </div>
 
-    
-</div>
+    <div class="downFooter"></div>
 
 </body>
 
