@@ -44,11 +44,18 @@ strong {
     height: 4px;
     background: #4960d2;
 }
-
+.img{
+    position: absolute;
+    top: 190px;
+    right: -35px;
+    width: 35px;
+    height: 208px;
+}
 .container {
     width: 1000px;
     margin: auto;
     background: #fff;
+    position: relative;
 }
 
 .block1 {
