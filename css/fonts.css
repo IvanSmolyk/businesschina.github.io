@@ -1,15 +1,15 @@
 @font-face {
     font-family: montserrat;
-    src: url(./fonts/montserrat.otf);
+    src: url(../fonts/montserrat.otf);
 }
 
 @font-face {
     font-family: montserratbold;
-    src: url(./fonts/montserratbold.otf);
+    src: url(../fonts/montserratbold.otf);
 }
 
 @font-face {
     font-family: montserratlight;
-    src: url(./fonts/montserratlight.otf);
+    src: url(../fonts/montserratlight.otf);
 }
 
