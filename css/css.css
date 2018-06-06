@@ -163,14 +163,13 @@ strong {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid lightgrey;
-    grid-gap: 10px;
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
 }
 
 .curProd img {
-    max-width: 120px;
+    max-width: 150px;
 }
 
 .curProd input {

@@ -6,7 +6,7 @@ window.addeventasync = function () {
         css: false
     });
 };
-
+window.addeventasync();
 
 document.getElementById('back').oninput = invest;
 
