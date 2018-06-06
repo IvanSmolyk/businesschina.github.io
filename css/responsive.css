@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .blockTime div:nth-last-child(1) {
+        grid-column: 1/-1;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .blockTime div:nth-last-child(1) {
+        grid-column: 1/-1;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .container {
+        width: 100%;
+    }
+}
