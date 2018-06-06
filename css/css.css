@@ -272,10 +272,9 @@ strong {
     color: #6598ff;
     font-size: 30px;
 }
-#prod, #adver{
-    color:  rgba(36,36,36,.7);    
-    font-size: 30px;
-       
+#prod, #clone{
+    color: rgba(36,36,36,.7);    
+    font-size: 30px;       
 }
 .totalsumm{
     background: #efefef;
